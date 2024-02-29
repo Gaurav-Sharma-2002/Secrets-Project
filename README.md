@@ -15,3 +15,14 @@ To run this application, follow these steps:
    - Open a terminal.
    - Navigate to the project folder using `cd`.
    - Run `npm install` to install all the required dependencies.
+
+3. **Setup SQL Database**
+   - Set up your SQL database ( I'm using PostgreSQL (version 15) and PgAdmin 4 ) .
+```
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password VARCHAR(100),
+    secret TEXT
+);
+```
